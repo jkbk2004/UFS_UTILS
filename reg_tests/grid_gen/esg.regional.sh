@@ -20,15 +20,28 @@ export out_dir=${WORK_DIR}/esg.regional
 #export dely=0.0145           # Grid spacing in degrees in 'j' direction
 #export halo=3
 
-export gtype=regional_esg
-# Domain center
-export target_lon=-79.5
-export target_lat=38.5
+#export gtype=regional_esg
+# East Domain center with 12km
+#export target_lon=-79.5
+#export target_lat=38.5
 # Approximate 12 km grid
-export delx=0.108
-export dely=0.108
+#export delx=0.108
+#export dely=0.108
 # Domain dimensions
-export idim=121
+#export idim=121
+#export jdim=73
+# FV3 halo
+#export halo=3
+
+export gtype=regional_esg
+# West Center of domain with 3km
+export target_lon=-117.885
+export target_lat=34.125
+# ~3 km resolution
+export delx=0.027
+export dely=0.027
+# Domain size
+export idim=65
 export jdim=73
 # FV3 halo
 export halo=3

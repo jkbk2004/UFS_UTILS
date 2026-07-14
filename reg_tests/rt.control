@@ -84,9 +84,9 @@ UPDATE_BASELINE="FALSE"
 ######
 
 ### REPO INFO ###
-REPO_BRANCH="develop"
-# REPO_LOC="https://github.com/ufs-community/UFS_UTILS.git"
-REPO_LOC="git@github.com:ufs-community/UFS_UTILS.git"
+REPO_BRANCH="feature/esg"
+#REPO_LOC="https://github.com/ufs-community/UFS_UTILS.git"
+REPO_LOC="https://github.com/jkbk2004/UFS_UTILS.git"
 ######
 
 # Shouldn't need to edit below here #

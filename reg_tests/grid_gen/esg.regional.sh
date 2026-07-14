@@ -11,13 +11,26 @@ set -x
 export TEMP_DIR=${WORK_DIR}/esg.regional.work
 export out_dir=${WORK_DIR}/esg.regional
 
+#export gtype=regional_esg
+#export target_lon=-97.5      # Center longitude of the highest resolution tile
+#export target_lat=35.5       # Center latitude of the highest resolution tile
+#export idim=1301             # Dimension of grid in 'i' direction
+#export jdim=600              # Dimension of grid in 'j' direction
+#export delx=0.0145           # Grid spacing in degrees in 'i' direction
+#export dely=0.0145           # Grid spacing in degrees in 'j' direction
+#export halo=3
+
 export gtype=regional_esg
-export target_lon=-97.5      # Center longitude of the highest resolution tile
-export target_lat=35.5       # Center latitude of the highest resolution tile
-export idim=1301             # Dimension of grid in 'i' direction
-export jdim=600              # Dimension of grid in 'j' direction
-export delx=0.0145           # Grid spacing in degrees in 'i' direction
-export dely=0.0145           # Grid spacing in degrees in 'j' direction
+# Domain center
+export target_lon=-79.5
+export target_lat=38.5
+# Approximate 12 km grid
+export delx=0.108
+export dely=0.108
+# Domain dimensions
+export idim=121
+export jdim=73
+# FV3 halo
 export halo=3
 
 NCCMP=${NCCMP:-$(which nccmp)}
